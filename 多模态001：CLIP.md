@@ -33,3 +33,26 @@
 
 # 模型训练
 
+训练了5个ResNet模型和3个VIT模型。Resnet训练了ResNet-50、ResNet-101和3个EfficientNet风格的模型，计算量分别相当于Resnet-50的4x、16x和64x。使用RN50x4、RN50x16和RN50x64称呼它们。对于VIT模型，训练了Vit-B/32、ViT-B/16和Vit-L/14。所有的模型训练32个epochs,采用Adam优化器，所有的权重都应用权重衰减正则化，使用余弦调度衰减学习率。当训练1个epoch时，使用网格搜索、随机搜索和对基线ResNet50模型的手动调整的组合来设置初始超参数。然后，由于计算限制，超参数被启发式地适应于更大的模型。batchsize设置为32768。使用混合精度来加速训练和节省内存。为了节省内存，梯度checkpoint、半精度的Adam统计和半精度的随机取整文本编码器权重(half-precision stochastically rounded text encoder weights )也被使用。
+
+# 实验
+
+## 零样本迁移
+
+- CLIP与Visual N-Grams的比较
+
+![image-20230921114122355](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20230921114122355.png)
+
+
+
+- CLIP vs ResNet50
+
+![image-20230921114932758](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20230921114932758.png)
+
+![image-20230921115255196](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20230921115255196.png)
+
+![image-20230921115321249](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20230921115321249.png)
+
+## 表示学习
+
+![image-20230921115507757](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20230921115507757.png)
