@@ -59,7 +59,7 @@ YOLOv3预测3种不同尺度的框。 我们的系统使用类似金字塔网络
 
 这个新网络比Darknet-19功能强大得多，但仍比ResNet-101或ResNet-152更高效。 以下是一些ImageNet结果：
 
-![image-20230921223339848](C:\Users\chengbo\AppData\Roaming\Typora\typora-user-images\image-20230921223339848.png)
+![image-20230921223339848](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20230921223339848.png)
 
 每个网络都使用相同的设置进行训练，并在256×256的图像上进行单精度测试。 运行时间是在Titan X上用256×256图像进行测量的。因此，Darknet-53可与最先进的分类器相媲美，但浮点运算更少，速度更快。 Darknet-53比ResNet-101更好，且速度快1.5倍。 Darknet-53与ResNet-152具有相似的性能，但速度快2倍。
 
@@ -67,9 +67,9 @@ Darknet-53也实现了最高的每秒浮点运算测量。 这意味着网络结
 
 ## 与其他方法的对比
 
-![image-20230921223945236](C:\Users\chengbo\AppData\Roaming\Typora\typora-user-images\image-20230921223945236.png)
+![image-20230921223945236](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20230921223945236.png)
 
-![image-20230921224122003](C:\Users\chengbo\AppData\Roaming\Typora\typora-user-images\image-20230921224122003.png)
+![image-20230921224122003](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20230921224122003.png)
 
 ## 我们试过但不凑效的方法
 
