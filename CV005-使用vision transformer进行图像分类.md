@@ -8,7 +8,7 @@ pip install transformers datasets evaluate
 
 训练数据和测试数据按照图片类别放置在文件夹中，如下图所示：
 
-![image-20231025112329144](./images/CV005-使用vision transformer进行图像分类/image-20231025112329144.png)
+![image-20231025112329144](images/CV005-使用vision transformer进行图像分类/image-20231025112329144.png)
 
 ![image-20231025112501976](./images/CV005-使用vision transformer进行图像分类/image-20231025112501976.png)
 
