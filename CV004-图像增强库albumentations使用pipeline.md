@@ -28,7 +28,7 @@ image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 visualize(image)
 ```
 
-![image-20231023213130508](F:\Learning\ReadWriteThink\image\CV004-图像增强库albumentations使用pipeline\image-20231023213130508.png)
+![image-20231023213130508](./images/CV004-图像增强库albumentations使用pipeline/image-20231023213130508.png)
 
 # 定义单个增强操作
 
@@ -41,7 +41,7 @@ augmented_image=transform(image=image)['image']
 visualize(augmented_image)
 ```
 
-![image-20231023213552667](F:\Learning\ReadWriteThink\images\CV004-图像增强库albumentations使用pipeline\image-20231023213552667.png)
+![image-20231023213552667](images/CV004-图像增强库albumentations使用pipeline/image-20231023213552667.png)
 
 ```
 transform=A.ShiftScaleRotate(p=0.5) #仿射变换：平移、缩放和旋转
@@ -50,7 +50,7 @@ augmented_image=transform(image=image)['image']
 visualize(augmented_image)
 ```
 
-![image-20231023213622119](F:\Learning\ReadWriteThink\images\CV004-图像增强库albumentations使用pipeline\image-20231023213622119.png)
+![image-20231023213622119](images/CV004-图像增强库albumentations使用pipeline/image-20231023213622119.png)
 
 # 定义图像增强pipeline
 
@@ -71,7 +71,7 @@ augmented_image=transform(image=image)['image']
 visualize(augmented_image)
 ```
 
-![image-20231023213718795](F:\Learning\ReadWriteThink\images\CV004-图像增强库albumentations使用pipeline\image-20231023213718795.png)
+![image-20231023213718795](images/CV004-图像增强库albumentations使用pipeline/image-20231023213718795.png)
 
 ```python
 transform = A.Compose([
@@ -106,7 +106,7 @@ augmented_image = transform(image=image)['image']
 visualize(augmented_image)
 ```
 
-![image-20231023213749287](F:\Learning\ReadWriteThink\images\CV004-图像增强库albumentations使用pipeline\image-20231023213749287.png)
+![image-20231023213749287](images/CV004-图像增强库albumentations使用pipeline/image-20231023213749287.png)
 
 
 
