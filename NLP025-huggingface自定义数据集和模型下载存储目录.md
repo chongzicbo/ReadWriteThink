@@ -51,5 +51,7 @@ load_dataset("Graphcore/vqa",cache_dir="/data/.cache")
 
 但是这种方式有个缺点，有些数据集下载的是个压缩文件，如.zip,下载后会进行自动解压，解压的默认目录还是在"~/.cache"目录下。从上面的图片中可以看到有个EXTRACTED_DATASETS_PATH 参数，这个参数就是设置解压的目录，可以通过修改该参数来配置解压后保存的目录。
 
+其它目录也可以参数上图config.py模块进行设置。
+
 
 
