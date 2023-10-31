@@ -55,3 +55,7 @@ load_dataset("Graphcore/vqa",cache_dir="/data/.cache")
 
 
 
+文章合集：[chongzicbo/ReadWriteThink: 博学而笃志，切问而近思 (github.com)](https://github.com/chongzicbo/ReadWriteThink/tree/main)
+
+
+
