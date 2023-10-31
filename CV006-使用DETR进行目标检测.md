@@ -101,7 +101,7 @@ for i in range(len(annotations["id"])):
 image.save("./res.jpg")
 ```
 
-![CPPE-5 Image Example](F:\Learning\ReadWriteThink\images\CV006-使用DETR进行目标检测\TdaqPJO.png)
+![CPPE-5 Image Example](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/TdaqPJO-1698761696301-3.png)
 
 用于对象检测的数据集的一个常见问题是边界框“拉伸”到图像边缘之外。这种“失控”的边界框可能会在训练过程中引发错误，应在现阶段加以解决。在这个数据集中有几个关于这个问题的数据样本，需要加以剔除。
 
@@ -455,4 +455,6 @@ image.save("./out.jpg")
 
 原文：[Object detection (huggingface.co)](https://huggingface.co/docs/transformers/tasks/object_detection)
 
-文章合集：
+文章合集：[chongzicbo/ReadWriteThink: 博学而笃志，切问而近思 (github.com)](https://github.com/chongzicbo/ReadWriteThink/tree/main)
+
+完整代码：[CV-Learning/ObjectDetection/detr at main · chongzicbo/CV-Learning (github.com)](https://github.com/chongzicbo/CV-Learning/tree/main/ObjectDetection/detr)
