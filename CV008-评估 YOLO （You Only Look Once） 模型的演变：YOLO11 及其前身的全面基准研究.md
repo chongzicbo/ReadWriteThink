@@ -380,8 +380,10 @@ YOLOv3u 是最大的模型，突显了与其更现代的对应物相比，它的
 
   在非洲野生动物数据集上，YOLOv9s的mAP50-95达到了0.832，表现优于其他模型。YOLOv9s之所以表现优异，主要原因包括：
 
-  - **小型数据集适应性**：YOLOv9s在小型数据集上表现出色，能够有效学习对象的模式。其小型模型（如YOLOv9t）在非洲野生动物数据集上表现尤为突出，mAP50-95为0.832，mAP50为0.956。
-  - **特征提取能力**：YOLOv9s采用了CSPNet（Cross-Stage Partial Network），这种结构通过分割特征图来提高特征提取效率，减少了计算复杂度。
-  - **正则化技术**：YOLOv9s使用了GelAN（Gradient Enhanced Lightweight Architecture Network），这种技术通过优化网络内的计算路径，提高了参数利用率和计算效率。
+  1. **小型数据集适应性**：YOLOv9s在小型数据集上表现出色，能够有效学习对象的模式。其小型模型（如YOLOv9t）在非洲野生动物数据集上表现尤为突出，mAP50-95为0.832，mAP50为0.956。
+  2. **特征提取能力**：YOLOv9s采用了CSPNet（Cross-Stage Partial Network），这种结构通过分割特征图来提高特征提取效率，减少了计算复杂度。
+  3. **正则化技术**：YOLOv9s使用了GelAN（Gradient Enhanced Lightweight Architecture Network），这种技术通过优化网络内的计算路径，提高了参数利用率和计算效率。
 
 [Evaluating the Evolution of YOLO (You Only Look Once) Models: A Comprehensive Benchmark Study of YOLO11 and Its Predecessors](https://arxiv.org/html/2411.00201v1)
+
+![二维码](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
