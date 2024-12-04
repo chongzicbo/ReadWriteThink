@@ -1,6 +1,6 @@
 2024 年是 YOLO 模型的一年。在 2023 年发布 Ultralytics YOLOv8 之后， YOLOv9 和 YOLOv10也在2024年发布了。但等等，这还不是结束！Ultralytics YOLO11 终于来了，在激动人心的 YOLO Vision 2024 （YV24） 活动中亮相。
 
-![](https://learnopencv.com/wp-content/uploads/2024/10/feature.gif)
+![](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/feature.gif)
 
 YOLO11 系列是 YOLO 系列中最先进的 （SOTA）、最轻、最高效的型号，性能优于其前代产品。它由 Ultralytics 创建，该组织发布了 YOLOv8，这是迄今为止最稳定和使用最广泛的 YOLO 变体。现在，YOLO11 将继续 YOLO 系列的传统。在本文中，我们将探讨：
 
@@ -14,7 +14,7 @@ YOLO11 系列是 YOLO 系列中最先进的 （SOTA）、最轻、最高效的�
 
 # 什么是YOLO11
 
-![](https://learnopencv.com/wp-content/uploads/2024/10/yolo11-1.png)
+![](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/yolo11-1.png)
 
 YOLO11 是 Ultralytics 的 YOLO 系列的最新版本。YOLO11 配备了超轻量级型号，比以前的 YOLO 更快、更高效。YOLO11 能够执行更广泛的计算机视觉任务。Ultralytics 根据大小发布了 5 个 YOLO11 模型，并在**所有任务中发布了 25 个模型**：
 
@@ -42,19 +42,19 @@ YOLO 以其对象检测模型而闻名。但是，YOLO11 可以执行多个计�
 
 ### 对象检测
 
-![yolo11-对象检测](https://cdn-ilcabpl.nitrocdn.com/XTpGTaZWYQSxctfMHQPVOQKOsBspWTQi/assets/images/optimized/rev-4cdf608/learnopencv.com/wp-content/uploads/2024/10/yolo11-object-detection.gif)
+![yolo11-对象检测](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/yolo11-object-detection.gif)
 
 YOLO11 通过将输入图像传递到 CNN 以提取特征来执行对象检测。然后，网络预测这些网格中对象的边界框和类概率。为了处理多尺度检测，使用图层来确保检测到各种大小的物体。然后使用非极大值抑制 （NMS） 来优化这些预测，以过滤掉重复或低置信度的框，从而获得更准确的对象检测。YOLO11 在 MS-COCO 数据集上进行对象检测训练，其中包括 80 个预训练类。
 
 ### 实例分割
 
-![yolo 分段](https://cdn-ilcabpl.nitrocdn.com/XTpGTaZWYQSxctfMHQPVOQKOsBspWTQi/assets/images/optimized/rev-4cdf608/learnopencv.com/wp-content/uploads/2024/10/yolo11-instance-segmentation-1.gif)
+![ ](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/yolo11-instance-segmentation-1-1733102326734-1.png)
 
 除了检测对象之外，YOLO11 还通过添加掩码预测分支扩展到实例分割。这些模型在 MS-COCO 数据集上进行训练，其中包括 80 个预训练类。此分支为每个检测到的对象生成像素级分割掩码，使模型能够区分重叠的对象并提供其形状的精确轮廓。head 中的蒙版分支处理特征映射并输出对象蒙版，从而在识别和区分图像中的对象时实现像素级精度。
 
 ### 姿势估计
 
-![YOLO11 姿势](./images/CV007-YOLO11%E8%AF%A6%E8%A7%A3/yolo11-pose-estimation.gif)
+![YOLO11 姿势](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/yolo11-pose-estimation.gif)
 
 YOLO11 通过检测和预测物体上的关键点（例如人体的关节）来执行姿态估计。关键点连接起来形成骨架结构，该结构表示姿势。这些模型在 COCO 上进行训练，其中包括一个预先训练的类“person”。
 
@@ -62,17 +62,17 @@ YOLO11 通过检测和预测物体上的关键点（例如人体的关节）来�
 
 ### 图像分类
 
-![YOLO11 图像分类](./images/CV007-YOLO11%E8%AF%A6%E8%A7%A3/yolo11-image-classification.gif)
+![YOLO11 图像分类](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/yolo11-image-classification.gif)
 
 对于图像分类，YOLO11 使用其深度神经网络从输入图像中提取高级特征，并将其分配给多个预定义类别之一。这些模型在 ImageNet 上进行训练，其中包括 1000 个预训练类。该网络通过多层卷积和池化处理图像，在增强基本特征的同时减少空间维度。网络顶部的分类头输出预测的类，使其适用于需要识别图像整体类别的任务。
 
 ### 定向目标检测 （OBB）
 
-![YOLO11-OBB](./images/CV007-YOLO11%E8%AF%A6%E8%A7%A3/yolo11-obb-detection-1.gif)
+![YOLO11-OBB](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/yolo11-obb-detection-1.gif)
 
 YOLO11 通过整合 OBB 扩展了常规对象检测，使模型能够检测和分类旋转或不规则方向的物体。这对于航空影像分析等应用程序特别有用。这些模型在 DOTAv1 上进行训练，其中包括 15 个预训练类。
 
-![YOLO11-OBB](./images/CV007-YOLO11%E8%AF%A6%E8%A7%A3/yolo11-obb-logic-1-1024x615.png)
+![YOLO11-OBB](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/yolo11-obb-logic-1-1024x615.png)
 
 OBB 模型不仅输出边界框坐标，还输出旋转角度 （θ） 或四个角点。这些坐标用于创建与对象方向对齐的边界框，从而提高旋转对象的检测准确性。
 
