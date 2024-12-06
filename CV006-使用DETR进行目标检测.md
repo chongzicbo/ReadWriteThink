@@ -453,8 +453,6 @@ image.save("./out.jpg")
 
 
 
-原文：[Object detection (huggingface.co)](https://huggingface.co/docs/transformers/tasks/object_detection)
-
 文章合集：[chongzicbo/ReadWriteThink: 博学而笃志，切问而近思 (github.com)](https://github.com/chongzicbo/ReadWriteThink/tree/main)
 
 完整代码：[CV-Learning/ObjectDetection/detr at main · chongzicbo/CV-Learning (github.com)](https://github.com/chongzicbo/CV-Learning/tree/main/ObjectDetection/detr)
