@@ -2,7 +2,7 @@ huggingface的transformers和dataset等库都默认把模型或者数据集下�
 
 以datasets库数据集下载为例。datasets数据集下载的相关配置在datasets.config.py模块中，如下图：
 
-![image-20231031165446512](./images/NLP25-huggingface自定义数据集和模型下载存储目录/image-20231031165446512.png)
+![image-20231031165446512](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20231031165446512.png)
 
 变量DEFAULT_XDG_CACHE_HOME="~/.cache",如果没有设置环境变量"XDG_CACHE_HOME"，则数据集默认保存在"~/.cache"目录下，因此，可以通过设置环境变量的方式修改数据集下载目录，如下：
 
