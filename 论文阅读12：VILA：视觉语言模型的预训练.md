@@ -8,7 +8,7 @@
 
 在这项工作中，我们旨在探索增强视觉语言模型预训练的不同设计选项。特别是，我们旨在回答“视觉语言模型预训练中的各种设计选项如何影响下游性能？”我们遵循了预训练+ SFT流程，并消除了不同设计选项对预训练的过度关注数据集属性和训练协议。我们发有几个发现：
 
-![image-20241204144844318](./images/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB12%EF%BC%9AVILA%EF%BC%9A%E8%A7%86%E8%A7%89%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%A2%84%E8%AE%AD%E7%BB%83/image-20241204144844318.png)
+![image-20241204144844318](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/image-20241204144844318-1733923519445-1-1733923522511-3.png)
 
 （1）在预训练期间冻结LLM训练可以取得不错的零样本性能，但不具备上下文学习（ICL）能力，而更新LLMs则能鼓励深度嵌入对齐，我们认为这对ICL很重要；
 
@@ -38,13 +38,13 @@
 
 1. **冻结LLM的预训练**：首先，研究了在预训练过程中冻结LLM的效果。通过比较冻结和不冻结LLM的情况，发现冻结LLM可以实现不错的零样本性能，但缺乏上下文学习能力。更新LLM则有助于深度嵌入对齐，从而提高上下文学习能力。
 
-   ![img](./images/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB12%EF%BC%9AVILA%EF%BC%9A%E8%A7%86%E8%A7%89%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%A2%84%E8%AE%AD%E7%BB%83/0b342b9ad00b53007fcc40ae305f2427-image.png)
+   ![img](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/0b342b9ad00b53007fcc40ae305f2427-image.png)
 
    
 
 2. **交错预训练数据**：其次，研究了交错预训练数据的效果。与单独使用图像-文本对相比，交错预训练数据提供了更准确的梯度更新，并且能够保持纯文本能力。
 
-   ![img](./images/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB12%EF%BC%9AVILA%EF%BC%9A%E8%A7%86%E8%A7%89%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%A2%84%E8%AE%AD%E7%BB%83/47eb7023774716556be91ef808c951b2-image.png)
+   ![img](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/47eb7023774716556be91ef808c951b2-image.png)
 
    
 
@@ -65,7 +65,7 @@
 
 3. 联合微调的效果：在微调过程中加入纯文本指令数据不仅能够恢复纯文本任务的性能下降，还能提高视觉语言任务的准确性。联合微调使得模型在预训练时使用短文本时不会丧失纯文本能力，从而解锁了更好的视觉多样性。
 
-   ![img](./images/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB12%EF%BC%9AVILA%EF%BC%9A%E8%A7%86%E8%A7%89%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%A2%84%E8%AE%AD%E7%BB%83/aef7863993e6fa2d03574be64d0606f0-image.png)
+   ![img](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/aef7863993e6fa2d03574be64d0606f0-image.png)
 
 # 总体结论
 
@@ -87,7 +87,5 @@
 2. **高分辨率图像的影响**：尽管使用高分辨率图像（336x336）可以显著提高TextVQA任务的准确性，但也会增加计算成本，并限制了上下文学习的演示数量。未来工作可以通过在预训练阶段使用较低分辨率的图像，并在后期训练阶段提高分辨率来减少训练时间。
 3. **数据压缩方法的探索**：尽管观察到使用“下采样”投影器可以减少图像令牌的数量，但为了获得最佳准确性，论文中没有使用任何令牌压缩方法，这留作未来的工作。
 
-# 关键问题
 
-- 交错图像-文本数据的数据形式是怎样的
 
