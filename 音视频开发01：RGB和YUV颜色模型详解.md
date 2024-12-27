@@ -1,3 +1,13 @@
+---
+title: '音视频开发01：RGB和YUV颜色模型详解'
+categories:
+  - [开发,音视频,基础]
+tags:
+  - 音视频开发
+  - 音视频基础
+date: 2024-12-05 11:37:00
+---
+
 
 
 # 1. RGB颜色模型
@@ -226,3 +236,11 @@ YUV模型在视频处理和传输中具有显著的优势，特别是在压缩�
 | YUV 4:2:0 | 12             | -12             |
 
 通过这个例子，我们可以清楚地看到YUV采样方式在存储方面的优势。YUV 4:4:4采样与RGB存储量相同，而YUV 4:2:2和YUV 4:2:0采样分别比RGB减少了8字节和12字节的存储量。这种存储量的减少在处理大尺寸图像或视频时尤为显著，有助于提高数据传输和存储的效率。
+
+文章合集：[chongzicbo/ReadWriteThink: 博学而笃志，切问而近思 (github.com)](https://github.com/chongzicbo/ReadWriteThink/tree/main)
+
+个人博客：[程博仕](https://chongzicbo.github.io/)
+
+微信公众号：
+
+![微信公众号](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
