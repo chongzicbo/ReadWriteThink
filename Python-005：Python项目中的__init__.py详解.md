@@ -1,3 +1,12 @@
+---
+title: 'Python 项目中 `__init__.py` 的作用详解'
+categories:
+  - [开发,python]
+tags:
+  - python
+date: 2025-01-14 12:00:00
+---
+
 
 
 # Python 项目中 `__init__.py` 的作用详解
@@ -228,3 +237,12 @@ for module_name in os.listdir(os.path.dirname(__file__)):
 - 加 `__init__.py` 可以执行初始化代码，控制模块的导入行为。
 - 不加 `__init__.py` 仍然可以将目录视为包（Python 3.3+），但无法执行初始化代码。
 
+
+
+文章合集：[chongzicbo/ReadWriteThink: 博学而笃志，切问而近思 (github.com)](https://github.com/chongzicbo/ReadWriteThink/tree/main)
+
+个人博客：[程博仕](https://chongzicbo.github.io/)
+
+微信公众号：
+
+![微信公众号](https://raw.githubusercontent.com/chongzicbo/images/main/picgo/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
